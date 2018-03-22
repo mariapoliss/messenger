@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Hind+Siliguri|Raleway|Rammetto+One");
+body {
+  padding: 45px;
+    height: 600px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("https://sky-wall.ru/uploads/source/2016/07/preview/9e3738016c7423664cdaf9b57530c8c6.jpg");
+
+}
+
+header{
+border-radius: 35px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    background-color: #ffffaa;
+    color: #0489b1;
+    letter-spacing: 5px;
+    font-size: 23px;
+    font-family: 'Rammetto One', cursive;
+margin-bottom: 50px;
+
+}
+
+#logo{
+    align-self: center;
+}
+
+#out{
+    align-self: center;
+}
+
+
+.profile_foto{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+#content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 600px;
+
+}
+
+.dark_block{
+    background: rgba(0,0,0,0.7);
+    font-family: Raleway;
+    color: #0489b1;
+    background: rgba(0,0,0,0.7);
+    box-shadow: inset 2px -1px 24px 5px rgba(0,0,0,0.75);
+}
+
+
+#left{
+    width: 300px;
+}
+
+#user_info{
+    height: 25%;
+    margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  background: rgba(0,0,0,0.7);
+    border-radius: 42px;
+
+
+  text-decoration: none;
+
+}
+
+
+#user_info_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+    width: 55%;
+
+}
+
+.name_surname{
+    font-size: 20px;
+}
+
+.login{
+    font-size: 15px;
+    color: #B0C4DE;
+}
+
+.edit_button{
+    width: 30px;
+    height: 15px;
+    text-align: center;
+    position: relative;
+    font-size: 10px;
+    color: #8a71a7;
+}
+.edit_button:hover{
+    color: #8a71fa;
+
+}
+
+#contacts{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10%;
+    height: 70%;
+}
+
+#contacts > div{
+    margin: 8px;
+}
+
+.name_of_block{
+  text-align: center;
+    font-size: 20px;
+    font-family: 'Rammetto One', cursive;
+}
+
+input{
+    background: url(../images/fon4.png);
+    border-radius: 42px;
+    padding-left: 15px;
+    transition: 0.3s linear;
+    outline: none;
+    margin-right: 8px;
+}
+input:focus {
+    width: 240px;
+}
+
+.search{
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.search button{
+    background: none;
+    border: none;
+}
+
+.icons{
+  width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.friends{
+  height: 60%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+#friends_list::-webkit-scrollbar{
+    width: 8px;
+    background-color: inherit;
+
+}
+
+#friends_list::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #385134;
+    border-radius: 50px;
+}
+#friends_list::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #ffffaa;
+    border-radius: 50px;
+
+}
+
+.friend{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  width: 250px;
+  margin: 20px 0px 20px 35px;
+}
+
+
+#new_chat{
+  text-align: center;
+  position: relative;
+}
+
+button{
+    border-radius: 42px;
+
+    background-color: #385134;
+    color: #ffa;
+    border-color: #385134;
+    outline: none;
+
+}
+
+#new_chat button{
+    width: 50%;
+    font-family: 'Rammetto One', cursive;
+
+}
+
+#new_chat button:hover{
+    width: 51%;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#dialog {
+    width: 700px;
+    height: 100%;
+}
+
+#tabs > div, #tabs > input {
+    display: none;
+}
+
+#tabs label {
+    padding: 13px 13px 5px 13px;
+    border-radius: 40px 40px 0px 0px;
+    line-height: 28px;
+    cursor: pointer;
+    position: relative;
+    bottom: 1px;
+}
+
+#tabs input[type="radio"]:checked + label { border-bottom: 2px solid #0489b1; }
+
+#tabs > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+#tabs > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+#tabs > input:nth-of-type(3):checked ~ div:nth-of-type(3) {
+    display: block;
+
+}
+
+.tab{
+  height: 400px;
+}
+
+
+
+
+#sending_message{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #0489b1;
+    height: 70px;
+    border-radius: 0px 0px 32px 32px;
+}
+
+#sending_message textarea{
+    border-radius: 25px;
+    padding-left: 15px;
+    width: 85%;
+    height: 70%;
+    margin: 10px 0px 10px 0px;
+    outline: none;
+}
+
+#sending_message button{
+  height: 30px;
+    width: 55px;
+
+}
+
+#notifications{
+  width: 100px;
+}
+
+a {
+  color: #00B7FF;
+  cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+footer{
+    height: 10px;
+}
